@@ -6,32 +6,9 @@
         class="logo vuejs"
       />
     </div>
-    <div class="title">
-      {{ $t('org.vue.widgets.welcome.content.title') }}
-    </div>
-    <div class="tips">
-      <div
-        v-for="n in 3"
-        :key="n"
-        :data-n="n"
-        class="tip"
-      >
-        <ItemLogo
-          :image="tipIcons[n - 1]"
-          class="icon"
-        />
-        <div class="message">
-          {{ $t(`org.vue.widgets.welcome.content.tip${n}`) }}
-        </div>
-      </div>
-    </div>
-    <div class="actions">
-      <VueButton
-        :label="$t('org.vue.widgets.welcome.content.ok')"
-        icon-left="done"
-        class="primary big"
-        @click="widget.remove()"
-      />
+    <h1>Hello World!</h1>
+    <div>
+      <p>This is a sample hello world widget. I am just another vue component being displayed as a widget!</p>
     </div>
   </div>
 </template>
@@ -52,45 +29,6 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import "~@vue/cli-ui/src/style/imports"
+<style scoped>
 
-.welcome
-  padding $padding-item
-  v-box()
-
-.logo-wrapper
-  v-box()
-  box-center()
-  margin $padding-item 0
-  .logo
-    width 100px
-    height @width
-
-.title
-  font-size 32px
-  font-weight lighter
-  text-align center
-  margin-bottom ($padding-item * 2)
-
-.tips
-  flex 1
-
-.tip
-  padding ($padding-item * 2)
-  h-box()
-  box-center()
-
-  .icon
-    >>> svg
-      fill rgba($vue-ui-color-primary, .7) !important
-
-  .message
-    flex 1
-    margin-left ($padding-item / 2)
-
-.actions
-  h-box()
-  box-center()
-  margin-bottom $padding-item
 </style>
