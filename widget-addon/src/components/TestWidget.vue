@@ -7,6 +7,7 @@
       />
     </div>
     <h1>Hello World!</h1>
+    <img src="/public/vuetroit.svg"/>
     <div>
       <p>This is a sample hello world widget. I am just another vue component being displayed as a widget!</p>
     </div>
