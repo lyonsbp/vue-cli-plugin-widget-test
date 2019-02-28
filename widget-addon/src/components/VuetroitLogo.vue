@@ -10,6 +10,9 @@
     viewBox="0 0 2000 2000"
     style="enable-background:new 0 0 789.7 683.8;" 
     xml:space="preserve"
+    @click="toggleAnimate"
+    class="jackInTheBox infinite"
+    :class="animate ? 'animated' : ''"
   >
   
   <title>logo</title>
@@ -34,9 +37,19 @@
 </template>
 
 <script>
-@import "animate.css/"
+import "animate.css"
 export default {
-  
+  data () {
+    return {
+      animate: false
+    }
+  },
+  methods: {
+    toggleAnimate() {
+      this.animate = !this.animate
+      console.log('here')
+    }
+  }
 }
 </script>
 
