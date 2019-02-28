@@ -7,7 +7,7 @@
       />
     </div>
     <h1>Hello World!</h1>
-    <img src="/public/vuetroit.svg"/>
+    <vuetroit-logo></vuetroit-logo>    
     <div>
       <p>This is a sample hello world widget. I am just another vue component being displayed as a widget!</p>
     </div>
@@ -15,11 +15,14 @@
 </template>
 
 <script>
+import VuetroitLogo from './VuetroitLogo'
 export default {
   inject: [
     'widget'
   ],
-
+  components: {
+    VuetroitLogo
+  },
   created () {
     this.tipIcons = [
       'dashboard',
