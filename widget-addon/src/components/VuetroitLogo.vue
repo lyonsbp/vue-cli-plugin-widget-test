@@ -7,11 +7,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
-    viewBox="0 0 2000 2000"
+    viewBox="-200 0 2500 2500"
     style="enable-background:new 0 0 789.7 683.8;" 
     xml:space="preserve"
     @click="toggleAnimate"
-    class="jackInTheBox infinite"
+    class="heartBeat infinite"
     :class="animate ? 'animated' : ''"
   >
   

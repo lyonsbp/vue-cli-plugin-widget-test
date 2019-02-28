@@ -6,7 +6,8 @@
         class="logo vuejs"
       />
     </div>
-    <h1>Hello World!</h1>
+    <div class="emoji">👁</div>
+    <div class="emoji">❤️</div>
     <vuetroit-logo></vuetroit-logo>    
     <div>
       <p>This is a sample hello world widget. I am just another vue component being displayed as a widget!</p>
@@ -34,5 +35,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .emoji {
+    font-size: 5em;
+    margin-left: 20%;
+  }
 </style>
