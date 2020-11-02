@@ -9,6 +9,6 @@
   "author": "Brandon Lyons",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^3.7.0"
+    "animate.css": "^4.1.1"
   }
 }
